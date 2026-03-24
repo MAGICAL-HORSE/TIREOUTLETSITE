@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lift Kits Houston | Leveling Kits for Trucks & SUVs | Tire Outlet</title>
+<meta name="description" content="Lift kits & leveling kits for trucks and SUVs in Houston. Full suspension lifts for F-150, Ram, Silverado, Expedition, Tahoe & more. Walk-in at Tire Outlet. (281) 902-7290.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--black:#0a0a0a;--white:#fff;--red:#c0392b;--red-dark:#922b21;--orange:#d4580a;--gray-500:#888}
+  body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+nav{background:#111;border-bottom:2px solid var(--red);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+  .logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;letter-spacing:2px;color:var(--white);text-decoration:none}
+  .logo span{color:var(--red)}
+  nav ul{list-style:none;display:flex;gap:2rem;align-items:center}
+  nav ul a{color:#ccc;text-decoration:none;font-size:.9rem;font-weight:500;letter-spacing:.5px;transition:color .2s}
+  nav ul a:hover{color:var(--red)}
+  .nav-cta{background:var(--red);color:var(--white)!important;padding:.4rem 1rem;border-radius:4px}
+  .dropdown{position:relative}
+  .dropdown>a::after{content:' ▾';font-size:.7rem}
+  .dropdown-menu{display:none;position:absolute;top:100%;left:0;background:#111;border:1px solid #222;border-top:2px solid var(--red);min-width:160px;z-index:200;padding:.5rem 0}
+  .dropdown-menu a{display:block;padding:.5rem 1.2rem;color:#ccc;font-size:.85rem;white-space:nowrap}
+  .dropdown-menu a:hover{color:var(--red);background:#1a1a1a}
+  .dropdown:hover .dropdown-menu{display:block}
+  @media(max-width:768px){nav ul{display:none}}
+  .hero{background:#0d0d0d;border-bottom:3px solid var(--red);padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,#140500 0%,#0d0d0d 70%)}
+  .hero-badge{display:inline-block;background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:3px;padding:.3rem 1rem;border-radius:2px;margin-bottom:1.5rem;position:relative}
+  .hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.8rem,7vw,5.5rem);line-height:1;letter-spacing:2px;margin-bottom:1rem;position:relative}
+  .hero h1 span{color:var(--red)}
+  .hero p{font-size:1.1rem;color:#bbb;max-width:640px;margin:0 auto 2rem;position:relative}
+  .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative}
+  .btn-primary{background:var(--red);color:var(--white);padding:.8rem 2rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:1px;border:none;border-radius:4px;text-decoration:none;display:inline-block;transition:background .2s}
+  .btn-primary:hover{background:var(--red-dark)}
+  .btn-outline{background:transparent;color:var(--white);padding:.8rem 2rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:1px;border:2px solid #444;border-radius:4px;text-decoration:none;display:inline-block;transition:border-color .2s}
+  .btn-outline:hover{border-color:var(--red)}
+  section{padding:4rem 2rem}
+  .container{max-width:1100px;margin:0 auto}
+  h2.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:1px;margin-bottom:.5rem}
+  h2.section-title span{color:var(--red)}
+  .section-sub{color:var(--gray-500);margin-bottom:3rem;font-size:1rem}
+  .kit-types{background:#0d0d0d}
+  .kit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+  .kit-card{border-radius:8px;padding:2.5rem;border:2px solid #222;background:#111;transition:border-color .3s}
+  .kit-card:hover{border-color:var(--red)}
+  .kit-card .kit-label{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:3px;padding:.25rem .8rem;border-radius:2px;margin-bottom:1rem}
+  .kit-card.level .kit-label{background:#1a2200;color:#8bc34a}
+  .kit-card.full .kit-label{background:#1a0000;color:var(--red)}
+  .kit-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2rem;margin-bottom:.5rem}
+  .kit-card .range{font-size:1rem;color:#888;margin-bottom:1.5rem}
+  .kit-card ul{list-style:none;margin-bottom:2rem}
+  .kit-card ul li{padding:.4rem 0;color:#ccc;font-size:.9rem;padding-left:1.4rem;position:relative;border-bottom:1px solid #1a1a1a}
+  .kit-card ul li::before{content:'›';color:var(--red);position:absolute;left:0;font-weight:700}
+  .kit-card .price{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;color:var(--red)}
+  .kit-card .price-note{font-size:.8rem;color:#666;display:block;margin-top:.2rem}
+  .vehicles{background:#111;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a}
+  .vehicle-tabs{display:flex;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
+  .vtab{background:#1a1a1a;border:1px solid #333;border-radius:4px;padding:.5rem 1.2rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:#ccc;cursor:pointer;transition:all .2s;letter-spacing:.5px}
+  .vtab.active,.vtab:hover{background:var(--red);border-color:var(--red);color:#fff}
+  .vehicle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+  .vehicle-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;padding:1.2rem 1.5rem}
+  .vehicle-card .make{font-size:.75rem;color:#888;text-transform:uppercase;letter-spacing:1px}
+  .vehicle-card .model{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.3rem;margin:.2rem 0}
+  .vehicle-card .kit-options{font-size:.8rem;color:#c0392b}
+  .why-section{background:#0d0d0d}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+  .why-card{background:#111;border:1px solid #1a1a1a;border-radius:6px;padding:1.8rem}
+  .why-card .icon{font-size:2rem;margin-bottom:.8rem;display:block}
+  .why-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;margin-bottom:.5rem}
+  .why-card p{color:#999;font-size:.9rem}
+  .faq-list{max-width:800px}
+  .faq-item{border-bottom:1px solid #222;padding:1.5rem 0}
+  .faq-item h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;margin-bottom:.5rem}
+  .faq-item p{color:#999;font-size:.95rem}
+  .cta-bar{background:var(--red);text-align:center;padding:3.5rem 2rem}
+  .cta-bar h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.5rem;margin-bottom:.5rem}
+  .cta-bar p{opacity:.9;margin-bottom:2rem}
+  .cta-bar .btn-white{background:var(--white);color:var(--red);padding:.8rem 2.5rem;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:1px;border-radius:4px;text-decoration:none;display:inline-block}
+  footer{background:#060606;border-top:1px solid #1a1a1a;padding:2rem;text-align:center;color:#555;font-size:.9rem}
+  footer a{color:#888;text-decoration:none}
+  @media(max-width:768px){.kit-grid{grid-template-columns:1fr}nav ul{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">TIRE<span>OUTLET</span></a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li class="dropdown">
+      <a href="/#services">Services</a>
+      <div class="dropdown-menu">
+        <a href="/#services">All Services</a>
+        <a href="/tpms.html">TPMS</a>
+        <a href="/lift-kits.html">Lift Kits</a>
+      </div>
+    </li>
+    <li><a href="/#gallery">Gallery</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/financing.html">Financing</a></li>
+    <li><a href="/#contact" class="nav-cta">Call Now</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">LIFT KITS & LEVELING KITS — HOUSTON, TX</div>
+  <h1>LIFT YOUR TRUCK.<br><span>HOUSTON STYLE.</span></h1>
+  <p>Full suspension lifts and leveling kits installed on trucks and SUVs right here on Westheimer. Walk in or call for a quote — financing available through Snap Finance and Acima.</p>
+  <div class="hero-actions">
+    <a href="tel:+12819027290" class="btn-primary">📞 (281) 902-7290 — Get a Quote</a>
+    <a href="/financing.html" class="btn-outline">Financing Available</a>
+  </div>
+</div>
+
+<section class="kit-types" id="kits">
+  <div class="container">
+    <h2 class="section-title">CHOOSE YOUR <span>LIFT</span></h2>
+    <p class="section-sub">We install both leveling kits and full suspension lifts — call us with your year, make, and model for an exact quote</p>
+    <div class="kit-grid">
+
+      <div class="kit-card level">
+        <div class="kit-label">LEVELING KIT</div>
+        <h3>Level It Out</h3>
+        <div class="range">Typical lift: 1.5" – 3" in front</div>
+        <ul>
+          <li>Corrects the factory rake (front sits lower than rear)</li>
+          <li>Allows fitment of larger tires up front</li>
+          <li>Much more affordable than a full lift</li>
+          <li>Less invasive — installs in a few hours</li>
+          <li>Great for F-150, Ram 1500, Silverado, Expedition</li>
+          <li>Compatible with stock wheels and many aftermarket sizes</li>
+        </ul>
+        <div class="price">Call for Quote<span class="price-note">Price varies by vehicle — call (281) 902-7290</span></div>
+      </div>
+
+      <div class="kit-card full">
+        <div class="kit-label">FULL SUSPENSION LIFT</div>
+        <h3>Go Big</h3>
+        <div class="range">Typical lift: 4" – 8"+ front and rear</div>
+        <ul>
+          <li>Maximum ground clearance and off-road capability</li>
+          <li>Run 35" – 40"+ tires with proper fitment</li>
+          <li>Includes new springs, shocks, control arms as needed</li>
+          <li>Available in 4", 6", and 8" kits depending on vehicle</li>
+          <li>Works on all major trucks and full-size SUVs</li>
+          <li>Financing available through Snap & Acima</li>
+        </ul>
+        <div class="price">Call for Quote<span class="price-note">Price varies by vehicle & lift height — call (281) 902-7290</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="vehicles">
+  <div class="container">
+    <h2 class="section-title">VEHICLES <span>WE SERVICE</span></h2>
+    <p class="section-sub">We install lift kits on all major trucks and full-size SUVs</p>
+
+    <div class="vehicle-tabs">
+      <div class="vtab active">All Vehicles</div>
+    </div>
+
+    <div class="vehicle-grid">
+      <div class="vehicle-card"><div class="make">Ford</div><div class="model">F-150</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Ford</div><div class="model">F-250 / F-350</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Ford</div><div class="model">Expedition</div><div class="kit-options">Leveling · 4" lift</div></div>
+      <div class="vehicle-card"><div class="make">Ram</div><div class="model">1500</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Ram</div><div class="model">2500 / 3500</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Chevy</div><div class="model">Silverado 1500</div><div class="kit-options">Leveling · 4" · 6" · 8" lift</div></div>
+      <div class="vehicle-card"><div class="make">Chevy</div><div class="model">Silverado 2500HD</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Chevy</div><div class="model">Tahoe / Suburban</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">GMC</div><div class="model">Sierra 1500</div><div class="kit-options">Leveling · 4" · 6" · 8" lift</div></div>
+      <div class="vehicle-card"><div class="make">GMC</div><div class="model">Yukon / Yukon XL</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Toyota</div><div class="model">Tundra</div><div class="kit-options">Leveling · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Toyota</div><div class="model">4Runner / Sequoia</div><div class="kit-options">Leveling · 4" lift</div></div>
+      <div class="vehicle-card"><div class="make">Nissan</div><div class="model">Titan</div><div class="kit-options">Leveling · 4" lift</div></div>
+      <div class="vehicle-card"><div class="make">Jeep</div><div class="model">Wrangler / Gladiator</div><div class="kit-options">2" · 4" · 6" lift</div></div>
+      <div class="vehicle-card"><div class="make">Other</div><div class="model">Don't see your ride?</div><div class="kit-options">Call us — we'll figure it out</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <h2 class="section-title">WHY GET IT DONE <span>AT TIRE OUTLET</span></h2>
+    <p class="section-sub">We've been working on Houston trucks for years — here's why drivers trust us</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="icon">💰</span>
+        <h3>Honest Pricing</h3>
+        <p>No inflated labor rates. We tell you the total cost upfront — parts and labor — with no surprise charges at the end.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">🔧</span>
+        <h3>Experienced Techs</h3>
+        <p>Our suspension team has installed countless lift kits on Houston trucks. We know what fits, what works, and what lasts.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">📐</span>
+        <h3>Alignment After Lift</h3>
+        <p>Every lift kit install includes a post-lift alignment check so your truck drives straight and your tires wear evenly.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">💳</span>
+        <h3>Financing Available</h3>
+        <p>Finance your lift kit through Snap Finance or Acima. No credit needed — apply online and get approved fast.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">🛞</span>
+        <h3>Tires & Rims Too</h3>
+        <p>Package your lift with bigger tires and new rims in one visit. We have the sizes you need to fill those fenders properly.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">📍</span>
+        <h3>Walk-In Welcome</h3>
+        <p>No appointment needed. Pull up to 12899 Westheimer Rd any day of the week and we'll get you a quote on the spot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#111">
+  <div class="container">
+    <h2 class="section-title">LIFT KIT <span>FAQ</span></h2>
+    <p class="section-sub">Everything you need to know before lifting your truck</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4>What's the difference between a leveling kit and a lift kit?</h4>
+        <p>A leveling kit only raises the front of your truck 1.5"–3" to match the rear height (correcting the factory rake). A full lift kit raises all four corners, giving you 4"–8"+ of total clearance for bigger tires and serious off-road capability. Leveling kits are less expensive and less involved — full lifts require more parts and labor.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do I need an alignment after a lift?</h4>
+        <p>Yes — always. Any time you alter suspension geometry, alignment is required. We include an alignment check with every lift kit install to make sure your truck tracks straight and your tires don't wear unevenly.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What size tires can I run after a lift?</h4>
+        <p>It depends on the lift height and your specific vehicle. A leveling kit might let you run 33" tires. A 4" lift typically fits 35"s. A 6" or 8" lift can fit 37"–40"+ depending on the truck. We'll tell you exactly what fits your setup when you call or come in.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How long does a lift kit install take?</h4>
+        <p>A leveling kit is usually done in 2–3 hours. A full suspension lift typically takes a full day depending on the kit and vehicle. Call ahead and we'll give you an accurate timeframe for your specific truck.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Will a lift affect my warranty?</h4>
+        <p>Aftermarket modifications can affect certain vehicle warranties depending on your manufacturer and dealer. We recommend checking your warranty terms. We use quality parts and can discuss your options when you come in.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I finance my lift kit?</h4>
+        <p>Yes — we partner with Snap Finance and Acima, both lease-to-own programs that don't require traditional credit. Apply online before you come in or we can walk you through it at the shop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-bar">
+  <h2>READY TO LIFT YOUR RIDE?</h2>
+  <p>Call us with your year, make & model and we'll get you a quote today. Walk-ins always welcome.</p>
+  <a href="tel:+12819027290" class="btn-white">📞 CALL (281) 902-7290</a>
+  <p style="margin-top:1rem;font-size:.9rem;opacity:.8">12899 Westheimer Rd Ste C · Houston, TX 77077 · Open 7 Days a Week</p>
+</div>
+
+<footer>
+  <p>© 2025 Tire Outlet Houston · <a href="/">Home</a> · <a href="/tpms.html">TPMS</a> · <a href="/financing.html">Financing</a> · <a href="tel:+12819027290">(281) 902-7290</a></p>
+</footer>
+
+</body>
+</html>
