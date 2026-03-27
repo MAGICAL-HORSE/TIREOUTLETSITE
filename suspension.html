@@ -21,7 +21,6 @@ nav{position:sticky;top:0;z-index:1000;height:68px;background:var(--ink);border-
 .nav-links a:hover{color:var(--chalk);border-bottom-color:var(--rust);}
 .nav-cta{background:var(--rust);color:white!important;padding:8px 18px!important;border-bottom:none!important;}
 .nav-dropdown{position:relative;}
-.nav-dropdown>a::after{content:' be';font-size:10px;opacity:.6;}
 .nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 3px);left:0;background:var(--smoke);border:1px solid var(--iron);border-top:2px solid var(--rust);min-width:190px;z-index:2000;padding:6px 0;columns:2;column-gap:0;}
 .nav-dropdown-menu a{display:block;padding:8px 16px;font-family:var(--ff-head);font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8a8480;border-bottom:none;text-decoration:none;white-space:nowrap;break-inside:avoid;}
 .nav-dropdown-menu a:hover{color:var(--amber);background:var(--steel);}
@@ -72,7 +71,7 @@ h2{font-family:var(--ff-display);font-size:clamp(28px,4vw,44px);letter-spacing:0
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
     <li class="nav-dropdown">
-      <a href="/#services" onclick="window.location='/'">Services</a>
+      <a href="/#services" onclick="window.location='/'">Services &#9662;</a>
       <div class="nav-dropdown-menu">
         <a href="/new-tires.html">New Tires</a>
         <a href="/used-tires.html">Used Tires</a>
