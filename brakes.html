@@ -61,7 +61,12 @@ h2{font-family:var(--ff-display);font-size:clamp(28px,4vw,44px);letter-spacing:0
 .footer-info{font-family:var(--ff-head);font-size:14px;font-weight:500;color:var(--bone);line-height:1.8;}
 .footer-info a{color:var(--bone);text-decoration:none;}
 .footer-phone{font-family:var(--ff-display);font-size:22px;color:var(--amber);text-decoration:none;}
-@media(max-width:768px){nav .nav-links{display:none;}nav{padding:0 20px;}.hero{padding:60px 24px 48px;}.cta-bar,.footer-bar{padding:48px 24px;}section{padding:48px 24px;}}
+.hamburger-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--chalk);font-size:26px;line-height:1;margin-left:8px;}
+.mob-nav{display:none;position:fixed;top:68px;left:0;right:0;background:var(--ink);border-bottom:3px solid var(--rust);z-index:999;}
+.mob-nav a{display:block;font-family:var(--ff-head);font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8a8480;text-decoration:none;padding:14px 24px;border-bottom:1px solid var(--iron);}
+.mob-nav a:hover{color:var(--chalk);background:var(--steel);}
+.mob-nav.open{display:block;}
+@media(max-width:768px){nav .nav-links{display:none;}.hamburger-btn{display:block;}nav{padding:0 20px;}.hero{padding:60px 24px 48px;}.cta-bar,.footer-bar{padding:48px 24px;}section{padding:48px 24px;}}
 </style>
 </head>
 <body>
@@ -90,10 +95,21 @@ h2{font-family:var(--ff-display);font-size:clamp(28px,4vw,44px);letter-spacing:0
     </li>
     <li><a href="/">Gallery</a></li>
     <li><a href="/">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
     <li><a href="/financing.html">Financing</a></li>
     <li><a href="tel:+12819027290" class="nav-cta">&#128222; Call Now</a></li>
   </ul>
+  <button class="hamburger-btn" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">&#9776;</button>
 </nav>
+<div class="mob-nav" id="mobNav">
+  <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/#services" onclick="document.getElementById('mobNav').classList.remove('open')">Services</a>
+  <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">Gallery</a>
+  <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/contact.html" onclick="document.getElementById('mobNav').classList.remove('open')">Contact</a>
+  <a href="/financing.html" onclick="document.getElementById('mobNav').classList.remove('open')">Financing</a>
+  <a href="tel:+12819027290">&#128222; Call Now</a>
+</div>
 
 <div class="hero" data-bg="BRAKES">
   <div class="eyebrow">Brake Service — Houston, TX</div>

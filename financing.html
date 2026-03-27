@@ -25,7 +25,7 @@ nav{background:#111;border-bottom:2px solid var(--red);padding:0 2rem;display:fl
   .dropdown-menu a{display:block;padding:.5rem 1.2rem;color:#ccc;font-size:.85rem;white-space:nowrap}
   .dropdown-menu a:hover{color:var(--red);background:#1a1a1a}
   .dropdown:hover .dropdown-menu{display:block}
-  @media(max-width:768px){nav ul{display:none}}
+  @media(max-width:768px){nav ul{display:none}.hamburger-btn{display:block;}}
   .hero{background:#111;border-bottom:1px solid #222;padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden}
   .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,#0a0d00 0%,#111 70%)}
   .hero-badge{display:inline-block;background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:3px;padding:.3rem 1rem;border-radius:2px;margin-bottom:1.5rem;position:relative}
@@ -81,6 +81,11 @@ nav{background:#111;border-bottom:2px solid var(--red);padding:0 2rem;display:fl
   footer{background:#060606;border-top:1px solid #1a1a1a;padding:2rem;text-align:center;color:#555;font-size:.9rem}
   footer a{color:#888;text-decoration:none}
   @media(max-width:768px){.partner-cards{grid-template-columns:1fr}nav ul{display:none}}
+.hamburger-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;color:#fff;font-size:26px;line-height:1;margin-left:8px;}
+.mob-nav{display:none;position:fixed;top:64px;left:0;right:0;background:#111;border-bottom:2px solid var(--red);z-index:999;}
+.mob-nav a{display:block;color:#ccc;text-decoration:none;font-size:.95rem;font-weight:600;letter-spacing:.5px;padding:14px 24px;border-bottom:1px solid #222;}
+.mob-nav a:hover{color:var(--red);background:#1a1a1a;}
+.mob-nav.open{display:block;}
 </style>
 </head>
 <body>
@@ -99,10 +104,21 @@ nav{background:#111;border-bottom:2px solid var(--red);padding:0 2rem;display:fl
     </li>
     <li><a href="/#gallery">Gallery</a></li>
     <li><a href="/#about">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
     <li><a href="/financing.html">Financing</a></li>
     <li><a href="/#contact" class="nav-cta">Call Now</a></li>
   </ul>
+  <button class="hamburger-btn" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">&#9776;</button>
 </nav>
+<div class="mob-nav" id="mobNav">
+  <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/#services" onclick="document.getElementById('mobNav').classList.remove('open')">Services</a>
+  <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">Gallery</a>
+  <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/contact.html" onclick="document.getElementById('mobNav').classList.remove('open')">Contact</a>
+  <a href="/financing.html" onclick="document.getElementById('mobNav').classList.remove('open')">Financing</a>
+  <a href="tel:+12819027290">&#128222; Call Now</a>
+</div>
 
 <div class="hero">
   <div class="hero-badge">FINANCING AVAILABLE — HOUSTON, TX</div>
